@@ -22,7 +22,6 @@ export default new Vuex.Store({
   },
   actions: {
     data(state) {
-
       axios.get('/data').then(res => {
         state.state.data = res.data.movieList
         state.state.list = state.state.data.filter(item => item.globalReleased)
