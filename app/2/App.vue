@@ -23,23 +23,4 @@
     }
   }
 }
-.citylist {
-  margin: 0;
-  padding: 0;
-  background: #f5f5f5;
-  font-size: 14px;
-  .cityp {
-    background: #ebebeb;
-    text-indent: 10%;
-    height: 30px;
-  }
-  .citydiv {
-    padding-left: 15px;
-    height: 45px;
-    line-height: 45px;
-    width: 90%;
-    margin: auto;
-    border-bottom: 1px rgb(184, 183, 183) solid;
-  }
-}
 </style>

@@ -7,8 +7,7 @@ export default new Vuex.Store({
   state: {
     data: [],
     list: [],
-    city: '成都',
-    citylist: [],//全城市数据
+    city: '成都'
   },
   mutations: {
     vuextab(state, v) {
@@ -17,10 +16,7 @@ export default new Vuex.Store({
       } else {
         state.list = state.data.filter(item => item.globalReleased)
       }
-    },
-    vuexcity(state, name) {
-      state.city = name
-      console.log(name, 'vuex')
+
     }
 
   },
@@ -29,12 +25,6 @@ export default new Vuex.Store({
       axios.get('/data').then(res => {
         state.state.data = res.data.movieList
         state.state.list = state.state.data.filter(item => item.globalReleased)
-      })
-    },
-    actionCity(store) {
-      axios.get('/api/city').then(res => {
-        store.state.citylist = res.data
-
       })
     }
   },

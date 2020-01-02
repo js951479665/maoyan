@@ -3,14 +3,14 @@
     <nav>
       <van-button
         @click="$router.history.push('/city')"
-        style="width:100px"
+        style="width:70px"
         color="linear-gradient(to right, #4bb0ff, #6149f6)"
       >{{city}}</van-button>
       <van-tabs v-model="active" @click="tab">
         <van-tab title="正在上映"></van-tab>
         <van-tab title="即将上映"></van-tab>
       </van-tabs>
-      <van-button icon="search" style="width:50px" type="primary" />
+      <van-button icon="search" type="primary" />
     </nav>
     <div class="count">
       <div class="div" v-for="(item,index) in list" :key="index">
@@ -94,7 +94,7 @@ img {
   font-size: 12px;
   cursor: pointer;
   position: absolute;
-  right: 6%;
+  right: 10%;
   top: 36%;
 }
 .divp {
@@ -114,11 +114,11 @@ img {
 nav {
   position: fixed;
   width: 100vw;
-  top: 7.4%;
+  top: 1rem;
   z-index: 5;
 }
 .count {
-  margin-top: 12%;
+  margin-top: 1rem;
 }
 .star {
   overflow: hidden;
