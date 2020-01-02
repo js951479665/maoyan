@@ -114,11 +114,11 @@ img {
 nav {
   position: fixed;
   width: 100vw;
-  top: 7.4%;
+  top: 1rem;
   z-index: 5;
 }
 .count {
-  margin-top: 12%;
+  margin-top: 1rem;
 }
 .star {
   overflow: hidden;
